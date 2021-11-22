@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Fast_Calculator</string>
     <string name="multi_label"><b> a * b Multiplication <br/></b> Calculate the product of the random <br/>numbers from your given interval</string>
+    <string name="div_label"><b> a% of b Procentage <br/></b> Calculate the procentage of a <br/>number from your given interval</string>
 </resources>
