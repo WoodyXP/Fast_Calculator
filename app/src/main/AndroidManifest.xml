@@ -10,6 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fast_Calculator">
         <activity
+            android:name=".Calc_Div_Activity"
+            android:exported="false" />
+
+        <service
+            android:name=".CalcService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Calc_Activity"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

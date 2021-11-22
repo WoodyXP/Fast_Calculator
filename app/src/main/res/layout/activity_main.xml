@@ -16,15 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="100"
-            >
-
+            android:weightSum="100">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="100dp"
                 android:layout_marginStart="50dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="40dp"
                 android:layout_weight="25"
                 android:height="20dp"
                 android:background="#C4C4C4"
@@ -70,7 +68,7 @@
                 android:height="20dp"
                 android:background="#C4C4C4"
                 android:gravity="center"
-                android:text="Choose your training"
+                android:text="@string/choose_your_training"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="18sp" />
@@ -109,25 +107,57 @@
                 android:layout_marginTop="13dp"
                 android:layout_marginStart="50dp">
 
-
-                <EditText
-                    android:id="@+id/multi_inter_low_edt"
+                <LinearLayout
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:textColor="#000000"
-                    android:text=" From:"
                     android:background="#C4C4C4"
-                    android:inputType="number"/>
+                    android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/multi_inter_high_edt"
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:textColor="#000000"
+                        android:text="From: "
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/multi_inter_low_edt"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:textColor="#000000"
+                        android:inputType="number"
+                        android:background="@color/white"/>
+                </LinearLayout>
+
+
+                <LinearLayout
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:textColor="#000000"
-                    android:layout_marginStart="30dp"
-                    android:text=" To: "
                     android:background="#C4C4C4"
-                    android:inputType="number"/>
+                    android:orientation="horizontal"
+                    android:layout_marginStart="30dp">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:textColor="#000000"
+                        android:text=" To: "
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/multi_inter_high_edt"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:textColor="#000000"
+                        android:inputType="number"
+                        android:background="@color/white"/>
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -154,8 +184,7 @@
                     android:textColor="#000000"
                     android:layout_gravity="center"
                     android:textSize="14sp"
-                    android:layout_marginStart="2dp"
-                    android:inputType="number"/>
+                    android:layout_marginStart="2dp"/>
 
             </LinearLayout>
 
@@ -164,35 +193,29 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="13dp"
-                android:layout_marginStart="50dp">
+                android:layout_marginStart="50dp"
+                android:background="#C4C4C4">
 
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:text=" Interval: "
+                    android:textSize="18sp"
+                    android:gravity=""/>
 
                 <EditText
                     android:id="@+id/div_inter_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
                     android:textColor="#000000"
-                    android:text=" Interval:"
-                    android:background="#C4C4C4"
-                    />
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:background="@color/white"/>
             </LinearLayout>
 
-
-
-
         </LinearLayout>
-
-
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="380dp"
-            android:layout_marginBottom="40dp"
-            android:background="#C4C4C4" />
-
 
     </LinearLayout>
 
